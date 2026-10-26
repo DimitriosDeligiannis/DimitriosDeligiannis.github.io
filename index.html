@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+  <!-- Header -->
+  <header class="max-w-4xl mx-auto px-6 pt-16 pb-8">
+    <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">Your Name</h1>
+    <p class="mt-2 text-xl text-slate-400">Mechanical / Robotics / Systems Engineer</p>
+    <div class="mt-4 flex gap-4 text-sm font-medium">
+      <a href="https://github.com/yourusername" class="text-blue-400 hover:underline">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" class="text-blue-400 hover:underline">LinkedIn</a>
+      <a href="mailto:you@example.com" class="text-blue-400 hover:underline">Email</a>
+    </div>
+  </header>
+
+  <!-- Projects Grid -->
+  <main class="max-w-4xl mx-auto px-6 py-8">
+    <h2 class="text-2xl font-bold border-b border-slate-700 pb-2 mb-6">Featured Projects</h2>
+    
+    <div class="grid gap-6 md:grid-cols-2">
+      
+      <!-- Project Card 1 -->
+      <article class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5 flex flex-col justify-between hover:border-slate-500 transition">
+        <div>
+          <div class="h-44 bg-slate-950 rounded-lg mb-4 flex items-center justify-center text-slate-500 overflow-hidden">
+            <!-- Replace placeholder with <img src="assets/project1.png" class="object-cover w-full h-full" /> -->
+            <span>Project Preview / CAD Render</span>
+          </div>
+          <h3 class="text-xl font-semibold">Autonomous Intake & Sorting Rig</h3>
+          <p class="mt-2 text-sm text-slate-300 leading-relaxed">
+            Designed a compliant roller intake and custom gearbox to feed and index game elements at 2.4 m/s. Validated geometry in CAD and manufactured using 3D-printed PETG and CNC-milled polycarb.
+          </p>
+        </div>
+        <div>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono">
+            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">Autodesk Fusion</span>
+            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">Rapid Prototyping</span>
+            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">C++</span>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-700/50 flex gap-3 text-sm">
+            <a href="#" class="text-blue-400 hover:underline font-medium">CAD Model &rarr;</a>
+            <a href="#" class="text-blue-400 hover:underline font-medium">Code Repo &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card 2 -->
+      <article class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5 flex flex-col justify-between hover:border-slate-500 transition">
+        <div>
+          <div class="h-44 bg-slate-950 rounded-lg mb-4 flex items-center justify-center text-slate-500 overflow-hidden">
+            <span>Project Preview / Schematic</span>
+          </div>
+          <h3 class="text-xl font-semibold">Closed-Loop Stepper Actuator</h3>
+          <p class="mt-2 text-sm text-slate-300 leading-relaxed">
+            Integrated a magnetic rotary encoder with an STM32 MCU running a custom PID control loop for high-precision positioning without step loss under load.
+          </p>
+        </div>
+        <div>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono">
+            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">STM32</span>
+            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">PID Control</span>
+            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">KiCAD</span>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-700/50 flex gap-3 text-sm">
+            <a href="#" class="text-blue-400 hover:underline font-medium">Technical Report &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="max-w-4xl mx-auto px-6 py-12 text-center text-xs text-slate-500">
+    &copy; 2026 Your Name. Static site hosted on GitHub Pages.
+  </footer>
+</body>
+</html>
