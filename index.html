@@ -28,9 +28,28 @@
       <!-- FTC Robot Project Card -->
       <article class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5 flex flex-col justify-between hover:border-slate-500 transition">
         <div>
-          <div class="h-44 bg-slate-950 rounded-lg mb-4 flex items-center justify-center text-slate-500 overflow-hidden">
-            <img src="actionshot.jpg" alt="FTC Robot in action" class="object-cover w-full h-full" />
+          <!-- Carousel Container -->
+          <div class="relative h-48 bg-slate-950 rounded-lg mb-4 overflow-hidden group carousel">
+            <div class="carousel-slides relative w-full h-full">
+              <img src="robophinsrobot.png" alt="FTC Robophins Robot" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100" />
+              <img src="actionshot.jpg" alt="FTC Robot Action Shot" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 pointer-events-none" />
+            </div>
+
+            <!-- Carousel Controls -->
+            <button type="button" class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-slate-900/75 hover:bg-slate-900 text-white rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition focus:opacity-100" aria-label="Previous image">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button type="button" class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-slate-900/75 hover:bg-slate-900 text-white rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition focus:opacity-100" aria-label="Next image">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+
+            <!-- Slide Indicators -->
+            <div class="carousel-dots absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 bg-slate-900/60 px-2 py-1 rounded-full">
+              <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+              <span class="w-2 h-2 rounded-full bg-slate-500/60"></span>
+            </div>
           </div>
+
           <div class="flex items-center justify-between">
             <h3 class="text-xl font-semibold">FIRST Tech Challenge Robot</h3>
             <span class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Worlds Qualifier</span>
@@ -59,11 +78,28 @@
       <!-- FRC Robot Project Card -->
       <article class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5 flex flex-col justify-between hover:border-slate-500 transition">
         <div>
-          <div class="h-44 bg-slate-950 rounded-lg mb-4 flex items-center justify-center text-slate-500 overflow-hidden">
-            <!-- Replace frc-robot.jpg with your image path -->
-            <img src="frc-robot.jpg" alt="FRC Competition Robot" class="object-cover w-full h-full hidden" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
-            <span class="text-xs text-slate-500 text-center px-4">FRC Robot CAD / Field Shot (frc-robot.jpg)</span>
+          <!-- Carousel Container -->
+          <div class="relative h-48 bg-slate-950 rounded-lg mb-4 overflow-hidden group carousel">
+            <div class="carousel-slides relative w-full h-full">
+              <img src="frcrobot.png" alt="FRC Competition Robot" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100" />
+              <img src="bellypan.png" alt="FRC Bellypan and Electronics Layout" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 pointer-events-none" />
+            </div>
+
+            <!-- Carousel Controls -->
+            <button type="button" class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-slate-900/75 hover:bg-slate-900 text-white rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition focus:opacity-100" aria-label="Previous image">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button type="button" class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-slate-900/75 hover:bg-slate-900 text-white rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition focus:opacity-100" aria-label="Next image">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+
+            <!-- Slide Indicators -->
+            <div class="carousel-dots absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 bg-slate-900/60 px-2 py-1 rounded-full">
+              <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+              <span class="w-2 h-2 rounded-full bg-slate-500/60"></span>
+            </div>
           </div>
+
           <div class="flex items-center justify-between">
             <h3 class="text-xl font-semibold">FIRST Robotics Competition</h3>
             <span class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30">FRC Robot</span>
@@ -92,7 +128,7 @@
       <!-- Closed-Loop Stepper Actuator Project Card -->
       <article class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5 flex flex-col justify-between hover:border-slate-500 transition">
         <div>
-          <div class="h-44 bg-slate-950 rounded-lg mb-4 flex items-center justify-center text-slate-500 overflow-hidden">
+          <div class="h-48 bg-slate-950 rounded-lg mb-4 flex items-center justify-center text-slate-500 overflow-hidden">
             <span>Project Preview / Schematic</span>
           </div>
           <h3 class="text-xl font-semibold">Closed-Loop Stepper Actuator</h3>
@@ -118,5 +154,57 @@
   <footer class="max-w-4xl mx-auto px-6 py-12 text-center text-xs text-slate-500">
     &copy; 2026 Dimitrios Deligiannis.
   </footer>
+
+  <!-- Reusable Carousel Script -->
+  <script>
+    document.querySelectorAll('.carousel').forEach(carousel => {
+      const slides = carousel.querySelectorAll('.carousel-slide');
+      const dots = carousel.querySelectorAll('.carousel-dots span');
+      const prevBtn = carousel.querySelector('.carousel-prev');
+      const nextBtn = carousel.querySelector('.carousel-next');
+
+      if (slides.length <= 1) {
+        if (prevBtn) prevBtn.style.display = 'none';
+        if (nextBtn) nextBtn.style.display = 'none';
+        const dotContainer = carousel.querySelector('.carousel-dots');
+        if (dotContainer) dotContainer.style.display = 'none';
+        return;
+      }
+
+      let currentIndex = 0;
+
+      function updateSlide(newIndex) {
+        currentIndex = (newIndex + slides.length) % slides.length;
+
+        slides.forEach((slide, idx) => {
+          if (idx === currentIndex) {
+            slide.classList.remove('opacity-0', 'pointer-events-none');
+            slide.classList.add('opacity-100');
+          } else {
+            slide.classList.remove('opacity-100');
+            slide.classList.add('opacity-0', 'pointer-events-none');
+          }
+        });
+
+        dots.forEach((dot, idx) => {
+          if (idx === currentIndex) {
+            dot.className = 'w-2 h-2 rounded-full bg-blue-400 transition';
+          } else {
+            dot.className = 'w-2 h-2 rounded-full bg-slate-500/60 transition';
+          }
+        });
+      }
+
+      prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        updateSlide(currentIndex - 1);
+      });
+
+      nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        updateSlide(currentIndex + 1);
+      });
+    });
+  </script>
 </body>
 </html>
