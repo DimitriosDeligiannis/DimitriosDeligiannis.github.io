@@ -60,6 +60,57 @@
     <h2 class="text-2xl font-bold border-b border-slate-700 pb-2 mb-6">Projects</h2>
     
     <div class="grid gap-6 md:grid-cols-2">
+
+      <!-- BAJA SAE Project Card -->
+      <article class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5 flex flex-col justify-between hover:border-slate-500 transition md:col-span-2">
+        <div>
+          <!-- Carousel Container -->
+          <div class="relative h-64 bg-slate-800/60 rounded-lg mb-4 overflow-hidden group carousel">
+            <div class="carousel-slides relative w-full h-full">
+              <img src="tierods.png" alt="BAJA SAE Tie Rods CAD Design" class="carousel-slide absolute inset-0 w-full h-full object-contain transition-opacity duration-300 opacity-100" />
+              <img src="toelinks.png" alt="BAJA SAE Toe Links CAD Assembly" class="carousel-slide absolute inset-0 w-full h-full object-contain transition-opacity duration-300 opacity-0 pointer-events-none" />
+              <img src="toelinkfea.png" alt="BAJA SAE Toe Link FEA Stress Analysis" class="carousel-slide absolute inset-0 w-full h-full object-contain transition-opacity duration-300 opacity-0 pointer-events-none" />
+            </div>
+
+            <!-- Carousel Controls -->
+            <button type="button" class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-slate-900 text-white rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition focus:opacity-100 z-10" aria-label="Previous image">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button type="button" class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-slate-900 text-white rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition focus:opacity-100 z-10" aria-label="Next image">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+
+            <!-- Slide Indicators (3 dots) -->
+            <div class="carousel-dots absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 bg-slate-900/80 px-2 py-1 rounded-full z-10">
+              <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+              <span class="w-2 h-2 rounded-full bg-slate-500/60"></span>
+              <span class="w-2 h-2 rounded-full bg-slate-500/60"></span>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-semibold">BAJA SAE &mdash; 2027 &ldquo;Leo&rdquo;</h3>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">Suspension &amp; Steering</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-300 leading-relaxed">
+            Designed and fabricated custom tie rods and rear toe links for our 2027 vehicle, Leo, using 4130 chromoly steel tubing with threaded weld bungs butt-welded to accommodate high-misalignment heim joints. This configuration significantly expanded angular articulation through full suspension travel, eliminating mechanical bind during severe bump and droop. By optimizing link lengths and mounting hardpoints, the geometry targets an aggressive static camber profile of -1° to -3°, ensuring dynamic camber gain compensates for chassis roll so the tire contact patch remains flat under heavy cornering loads.
+          </p>
+          <p class="mt-2 text-xs text-slate-400">
+            <strong>Key Focus:</strong> Kinematic modeling, tensile/buckling load analysis, and packaging integration within the uprights and chassis hardpoints.
+          </p>
+        </div>
+        <div>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono">
+            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">CAD &amp; Kinematics</span>
+            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">Suspension Geometry</span>
+            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">Finite Element Analysis</span>
+            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">Vehicle Dynamics</span>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-700/50 flex gap-3 text-sm">
+            <a href="https://offroadillini.mechse.illinois.edu/" target="_blank" class="text-blue-400 hover:underline font-medium">Team Website &rarr;</a>
+          </div>
+        </div>
+      </article>
       
       <!-- FTC Robot Project Card -->
       <article class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5 flex flex-col justify-between hover:border-slate-500 transition">
@@ -157,57 +208,6 @@
           <div class="mt-4 pt-3 border-t border-slate-700/50 flex gap-3 text-sm">
             <a href="https://a360.co/4zVw2l9" target="_blank" class="text-blue-400 hover:underline font-medium">CAD Assembly &rarr;</a>
             <a href="https://www.axiom4787.com/welcome" target="_blank" class="text-blue-400 hover:underline font-medium">Team Website &rarr;</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- BAJA SAE Project Card -->
-      <article class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5 flex flex-col justify-between hover:border-slate-500 transition md:col-span-2">
-        <div>
-          <!-- Carousel Container -->
-          <div class="relative h-64 bg-slate-800/60 rounded-lg mb-4 overflow-hidden group carousel">
-            <div class="carousel-slides relative w-full h-full">
-              <img src="tierods.png" alt="BAJA SAE Tie Rods CAD Design" class="carousel-slide absolute inset-0 w-full h-full object-contain transition-opacity duration-300 opacity-100" />
-              <img src="toelinks.png" alt="BAJA SAE Toe Links CAD Assembly" class="carousel-slide absolute inset-0 w-full h-full object-contain transition-opacity duration-300 opacity-0 pointer-events-none" />
-              <img src="toelinkfea.png" alt="BAJA SAE Toe Link FEA Stress Analysis" class="carousel-slide absolute inset-0 w-full h-full object-contain transition-opacity duration-300 opacity-0 pointer-events-none" />
-            </div>
-
-            <!-- Carousel Controls -->
-            <button type="button" class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-slate-900 text-white rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition focus:opacity-100 z-10" aria-label="Previous image">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
-            </button>
-            <button type="button" class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-slate-900 text-white rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition focus:opacity-100 z-10" aria-label="Next image">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-            </button>
-
-            <!-- Slide Indicators (3 dots) -->
-            <div class="carousel-dots absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 bg-slate-900/80 px-2 py-1 rounded-full z-10">
-              <span class="w-2 h-2 rounded-full bg-blue-400"></span>
-              <span class="w-2 h-2 rounded-full bg-slate-500/60"></span>
-              <span class="w-2 h-2 rounded-full bg-slate-500/60"></span>
-            </div>
-          </div>
-
-          <div class="flex items-center justify-between">
-            <h3 class="text-xl font-semibold">BAJA SAE &mdash; 2027 &ldquo;Leo&rdquo;</h3>
-            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">Suspension &amp; Steering</span>
-          </div>
-          <p class="mt-2 text-sm text-slate-300 leading-relaxed">
-            Designed and fabricated custom tie rods and rear toe links for our 2027 vehicle, Leo, using 4130 chromoly steel tubing with threaded weld bungs butt-welded to accommodate high-misalignment heim joints. This configuration significantly expanded angular articulation through full suspension travel, eliminating mechanical bind during severe bump and droop. By optimizing link lengths and mounting hardpoints, the geometry targets an aggressive static camber profile of -1° to -3°, ensuring dynamic camber gain compensates for chassis roll so the tire contact patch remains flat under heavy cornering loads.
-          </p>
-          <p class="mt-2 text-xs text-slate-400">
-            <strong>Key Focus:</strong> Kinematic modeling, tensile/buckling load analysis, and packaging integration within the uprights and chassis hardpoints.
-          </p>
-        </div>
-        <div>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono">
-            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">CAD &amp; Kinematics</span>
-            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">Suspension Geometry</span>
-            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">Finite Element Analysis</span>
-            <span class="bg-slate-700 px-2.5 py-1 rounded-md text-slate-200">Vehicle Dynamics</span>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-700/50 flex gap-3 text-sm">
-            <a href="https://offroadillini.mechse.illinois.edu/" target="_blank" class="text-blue-400 hover:underline font-medium">Team Website &rarr;</a>
           </div>
         </div>
       </article>
